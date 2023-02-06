@@ -1,3 +1,3 @@
-# picoCTF
+# these are my writeups
 
-this is my work
+/i try/
