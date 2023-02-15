@@ -1,0 +1,18 @@
+# Mind your Ps and Qs
+I had to install a github tool: https://github.com/RsaCtfTool/RsaCtfTool
+this allows us to enter our given ciphertext and public exponent,
+and probably runs the c = m^e * mod n  to figure out the M,which is our plaintext. 
+```python
+python3 RsaCtfTool.py -n 1584586296183412107468474423529992275940096154074798537916936609523894209759157543 
+-e 65537 --uncipher 964354128913912393938480857590969826308054462950561875638492039363373779803642185
+```
+running this gives us:
+
+HEX : 0x007069636f4354467b736d6131315f4e5f6e305f67306f645f37333931383936327d
+INT (big endian) : 13016382529449106065927291425342535437996222135352905256639684640304028661985917
+INT (little endian) : 3711160986047915108755079562074128500208424285494215969975035182007076726805983232
+utf-8 : picoCTF{sma11_N_n0_g0od_73918962}
+utf-16 : 瀀捩䍯䙔獻慭ㄱ也湟弰で摯㝟㤳㠱㘹紲
+```STR : b'\x00picoCTF{sma11_N_n0_g0od_73918962}'
+```
+which gives us the flag.
