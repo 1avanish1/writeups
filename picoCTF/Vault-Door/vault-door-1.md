@@ -1,4 +1,4 @@
-```
+```java
 import java.util.*;
 
 class VaultDoor1 {
@@ -60,8 +60,8 @@ class VaultDoor1 {
 
 
 i opened this in a text editor,used Ctrl+F,and basically changed the syntax to make an array,
-then called with a loop,that prints the flag.
-```
+then called the array,that prints the flag.
+```java
 public class Main {
 
     public static void main(String[] args) {
