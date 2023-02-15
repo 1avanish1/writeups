@@ -1,5 +1,5 @@
 # vault-door-training
-'''java
+```java
 import java.util.*;
 
 class VaultDoorTraining {
@@ -27,4 +27,4 @@ class VaultDoorTraining {
     }
 }
 
-'''
+```
