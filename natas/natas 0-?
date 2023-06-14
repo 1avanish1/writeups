@@ -1,0 +1,37 @@
+for level 1;
+its just given in the inspct element: The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 
+
+for lvl 2;
+right click is blocked,use shortcut keys,ex:ctrl+shift+I
+<!--The password for natas2 is h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7 -->
+
+for lvl 3;
+we find pixel.png exists in a files direcoty on the site,going to files we find users.txt.
+natas3:G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
+
+for lvl4;
+it was a robots.txt
+A robots.txt file tells search engine crawlers which URLs the crawler can access on your site
+this is why it was mentioned not even google can find it.
+natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
+
+for lvl5;
+ The Referer HTTP request header contains the absolute or partial address from which a resource has been requested.
+ The Referer header allows a server to identify referring pages that people are visiting from or where requested resources are being used.
+ This data can be used for analytics, logging, optimized caching, and more.
+
+When you click a link, the Referer contains the address of the page that includes the link. When you make resource requests to another domain,
+the Referer contains the address of the page that uses the requested resource. 
+ ```
+import requests
+url = "http://natas4.natas.labs.overthewire.org/"
+referer = "http://natas5.natas.labs.overthewire.org/"
+
+s = requests.Session()
+s.auth = ('natas4', 'tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm')
+s.headers.update({'referer': referer})
+r = s.get(url)
+
+print(r.text)
+```
+
