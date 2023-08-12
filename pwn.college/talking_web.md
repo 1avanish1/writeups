@@ -4,6 +4,6 @@
       ```python
       import requests
 
-response = requests.get("http://localhost")
-print(response.text)
+      response = requests.get("http://localhost")
+      print(response.text)
 ```
